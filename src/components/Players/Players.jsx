@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Player from "../Player/Player";
 
 const Players = () => {
 
@@ -7,12 +8,14 @@ const Players = () => {
     useEffect(()=>{
         fetch('players.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => addPlayers(data))
     },[])
-    
+
     return (
         <div>
-            
+            {
+                players.map(player =><Player key={player.playerId} player ={player}></Player>)
+            }
         </div>
     );
 };
