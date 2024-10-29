@@ -1,0 +1,7 @@
+.bg-div {
+  background-image: url(./../../images/bg-shadow.png);
+  background-color: black;
+  background-size: cover; /* This makes the image cover the whole div */
+  background-position: center; /* Centers the image in the div */
+  background-repeat: no-repeat;
+}
