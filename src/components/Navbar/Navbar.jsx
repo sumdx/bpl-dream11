@@ -1,6 +1,7 @@
 import Logo from "../../images/logo.png"
+import { RiCoinsFill } from "react-icons/ri";
 
-const Navbar = () => {
+const Navbar = ({amountAvailable}) => {
     return (
         <div className=" mx-auto items-center flex container justify-between mt-6">
             <img src={Logo} alt="" />
@@ -9,7 +10,7 @@ const Navbar = () => {
                 <li>Fixtures</li>
                 <li>Team</li>
                 <li>Schedules</li>
-                <li>Button</li>
+                <li><button className="flex gap-2">{amountAvailable} Coin <p className="text-yellow-500 text-2xl"><RiCoinsFill></RiCoinsFill></p></button></li>
             </ul>
         </div>
     );
