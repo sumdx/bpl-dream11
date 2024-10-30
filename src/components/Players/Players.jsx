@@ -19,6 +19,7 @@ const Players = ({choosePlayerHandler}) => {
           <Player key={player.playerId} choosePlayerHandler={choosePlayerHandler} player={player}></Player>
         ))}
       </div>
+      
     </div>
   );
 };

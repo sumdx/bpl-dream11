@@ -14,6 +14,7 @@ const Cart = ({cartItem}) => {
             </div>
             <p className="text-2xl text-red-700"><MdDelete></MdDelete></p>
         </div>
+        
     );
 };
 

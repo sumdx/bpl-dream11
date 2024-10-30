@@ -2,14 +2,14 @@
 
 const Footer = () => {
     return (
-        <div>
-            <div>
-
+        <footer className="bg-gray-900">
+            <div className="container mx-auto]">
+                <h1>Bangladesh</h1>
             </div>
-            <div>
+            <div className="">
                 
             </div>
-        </div>
+        </footer>
 
     );
 };

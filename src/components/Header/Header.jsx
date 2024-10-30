@@ -5,7 +5,7 @@ import HeaderLogo from "./../../images/banner-main.png";
 
 const Header = ({amountAvailable,claimBtnHandler}) => {
   return (
-    <header>
+    <header >
       <Navbar
         amountAvailable= {amountAvailable}
       ></Navbar>
@@ -14,14 +14,14 @@ const Header = ({amountAvailable,claimBtnHandler}) => {
           <img src={HeaderLogo} alt="" />
           <h1 className="text-white text-4xl font-bold mt-4">Assemble Your Ultimate Dream 11 Cricket Team</h1>
           <h3 className="text-lg text-gray-300">Beyond Boundaries Beyond Limits</h3>
-            <div className="border border-yellow-400 rounded-2xl p-1">
-            <button onClick={()=>claimBtnHandler()} className="p-4 rounded-xl bg-yellow-400 text-black font-bold">Claim Free Credit</button>
+            <div className="border hover:border-yellow-100 active:scale-90 duration-75 border-yellow-400 rounded-2xl p-1">
+            <button onClick={()=>claimBtnHandler()} className="hover:bg-yellow-100  p-4 rounded-xl bg-yellow-400 text-black font-bold">Claim Free Credit</button>
             </div>
           
         </div>
       </div>
     </header>
-  );
+  )
 };
 
 export default Header;

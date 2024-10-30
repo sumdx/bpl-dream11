@@ -36,7 +36,7 @@ const Player = ({ player ,choosePlayerHandler}) => {
         </div>
         <div className="flex justify-between mt-2 items-center">
             <p>Price : {player.biddingPrice}</p>
-            <button onClick={()=>choosePlayerHandler(player)} className="rounded-lg px-4 py-2 border border-gray-200">Choose Player</button>
+            <button onClick={()=>choosePlayerHandler(player)} className=" hover:bg-gray-200 active:scale-90 duration-75 rounded-lg px-4 py-2 border border-gray-200">Choose Player</button>
         </div>
 
       </div>
