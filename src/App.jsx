@@ -15,6 +15,11 @@ function App() {
   const [cart, updateCart] = useState([]);
 
   // Button Handlers
+  const dltbtnhandler =(playerId) =>{
+      const afterDltCart = cart.filter(item => item.playerId != playerId);
+      updateCart(afterDltCart);
+      console.log(cart)
+  }
   const claimBtnHandler = () => {
     updateAmount(amountAvailable + 6000000);
     toast.success("6000000 coin added to the account", {
@@ -70,12 +75,14 @@ function App() {
         isActiveSelected={isActiveSelected}
         isActiveAvailable={isActiveAvailable}
         cart={cart}
+        
       ></Selections>
       {isActiveAvailable ? (
         <Players choosePlayerHandler={choosePlayerHandler}></Players>
       ) : (
         <Selected
           cart={cart}
+          dltbtnhandler={dltbtnhandler}
           availableBtnHandler={availableBtnHandler}
         ></Selected>
       )}

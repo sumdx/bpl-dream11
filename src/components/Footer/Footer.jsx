@@ -3,7 +3,7 @@ import Logo from "./../../images/logo-footer.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 relative pt-40 mt-48">
+    <footer className="bg-gray-900 relative pt-40 mt-72">
       <div className="container mx-auto footer-float text-center py-20 border m-2 rounded-2xl flex flex-col gap-6 absolute left-0 right-0 -top-48">
         <h1 className=" text-4xl font-bold">Subscribe to our Newsletter</h1>
         <p>Get the latest updates and news right in your inbox!</p>
