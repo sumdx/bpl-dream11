@@ -16,4 +16,4 @@ This a cricket team making website.
 - Dynamic card create from the array of objects.
 - Sort, filter
 
-## Live link : 
+## Live link : https://bpldream1.netlify.app/
